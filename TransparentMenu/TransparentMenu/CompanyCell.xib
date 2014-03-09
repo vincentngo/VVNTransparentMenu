@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="companyCell" id="Zc3-2l-VIb" customClass="CompanyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zc3-2l-VIb" id="4uK-nF-JNZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgS-7f-GDR">
+                        <rect key="frame" x="83" y="11" width="153" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwe-8h-xx9">
+                        <rect key="frame" x="62" y="11" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="o35-Yh-q5k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VgS-7f-GDR" secondAttribute="trailing" constant="84" id="3l8-zU-cfU"/>
+                    <constraint firstItem="Bwe-8h-xx9" firstAttribute="top" secondItem="VgS-7f-GDR" secondAttribute="top" id="W5i-l7-t5B"/>
+                    <constraint firstAttribute="bottom" secondItem="Bwe-8h-xx9" secondAttribute="bottom" constant="7" id="mCy-j5-KP9"/>
+                    <constraint firstItem="Bwe-8h-xx9" firstAttribute="leading" secondItem="4uK-nF-JNZ" secondAttribute="leading" constant="62" id="sbk-Vo-5X8"/>
+                    <constraint firstItem="VgS-7f-GDR" firstAttribute="leading" secondItem="4uK-nF-JNZ" secondAttribute="leading" constant="83" id="tMv-Wa-wpA"/>
+                    <constraint firstItem="Bwe-8h-xx9" firstAttribute="top" secondItem="4uK-nF-JNZ" secondAttribute="top" constant="11" id="uIi-tu-1K3"/>
+                    <constraint firstItem="VgS-7f-GDR" firstAttribute="centerY" secondItem="4uK-nF-JNZ" secondAttribute="centerY" id="ya3-Ha-Zku"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconLabel" destination="Bwe-8h-xx9" id="S1n-0q-jfY"/>
+                <outlet property="titleLabel" destination="VgS-7f-GDR" id="2cM-nK-Lh8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
